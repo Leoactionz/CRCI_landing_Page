@@ -1,0 +1,14 @@
+{
+  "name": "crci-hub-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CRCi Hub redesign - static multi-page site (hash routing), GSAP + Lenis motion, light/dark themes.",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build && node -e \"const fs=require('fs');fs.cpSync('js','dist/js',{recursive:true});fs.cpSync('vendor','dist/vendor',{recursive:true})\"",
+    "preview": "vite preview --open"
+  },
+  "devDependencies": {
+    "vite": "5.4.10"
+  }
+}

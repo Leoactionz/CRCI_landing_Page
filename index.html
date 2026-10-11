@@ -1,0 +1,1123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CRCi Hub</title>
+<meta name="description" content="CRCi Hub pairs young learners across Africa with vetted literacy mentors for one-on-one reading sessions.">
+<meta name="theme-color" content="#022C22">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Figtree:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;1,7..72,400&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- Icons: Tabler Icons v3.19.0 (MIT), stroke 1.75 -->
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M5 12l14 0" /> <path d="M13 18l6 -6" /> <path d="M13 6l6 6" /></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M5 12l5 5l10 -10" /></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M12 5l0 14" /> <path d="M5 12l14 0" /></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /> <path d="M12 7v5l3 3" /></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M4 6l16 0" /> <path d="M4 12l16 0" /> <path d="M4 18l16 0" /></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"> <path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /> <path d="M21 21l-6 -6" /></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"> <path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" /></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"> <path d="M9 4h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2z" /> <path d="M17 4h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2z" /></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M15 8a5 5 0 0 1 0 8" /> <path d="M17.7 5a9 9 0 0 1 0 14" /> <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a.8 .8 0 0 1 1.5 .5v14a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" /></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /> <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /> <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /> <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></symbol>
+  <symbol id="i-school" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" /> <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" /></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /> <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /> <path d="M3 6l0 13" /> <path d="M12 6l0 13" /> <path d="M21 6l0 13" /></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M12 9m-6 0a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" /> <path d="M12 15l3.4 5.89l1.598 -3.233l3.598 .232l-3.4 -5.889" /> <path d="M6.802 12l-3.4 5.89l3.598 -.233l1.598 3.232l3.4 -5.889" /></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z" /></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M5 12l-2 0l9 -9l9 9l-2 0" /> <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /> <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M4 19l16 0" /> <path d="M4 15l4 -6l4 2l4 -5l4 4" /></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /> <path d="M16 3v4" /> <path d="M8 3v4" /> <path d="M4 11h16" /> <path d="M11 15h1" /> <path d="M12 15v3" /></symbol>
+  <symbol id="i-logout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" /> <path d="M9 12h12l-3 -3" /> <path d="M18 15l3 -3" /></symbol>
+  <symbol id="i-motion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm0 -12a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm-7 12a6 6 0 0 1 6 -6a6 6 0 0 1 -6 -6a6 6 0 0 1 -6 6a6 6 0 0 1 6 6z" /></symbol>
+  <symbol id="i-still" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /> <path d="M9 12l6 0" /></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z" /> <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" /> <path d="M8 11v-4a4 4 0 1 1 8 0v4" /></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M3 8m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" /> <path d="M12 8l0 13" /> <path d="M19 12v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-7" /> <path d="M7.5 8a2.5 2.5 0 0 1 0 -5a4.8 8 0 0 1 4.5 5a4.8 8 0 0 1 4.5 -5a2.5 2.5 0 0 1 0 5" /></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06" /> <path d="M15 19l2 2l4 -4" /></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M14 3v4a1 1 0 0 0 1 1h4" /> <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /> <path d="M9 9l1 0" /> <path d="M9 13l6 0" /> <path d="M9 17l6 0" /></symbol>
+  <symbol id="i-headphones" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M4 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z" /> <path d="M15 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z" /> <path d="M4 15v-3a8 8 0 0 1 16 0v3" /></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9z" /> <path d="M5 21v-7" /></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" /> <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" /></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M5 12l14 0" /> <path d="M5 12l6 6" /> <path d="M5 12l6 -6" /></symbol>
+  <symbol id="i-sort" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M3 9l4 -4l4 4m-4 -4v14" /> <path d="M21 15l-4 4l-4 -4m4 4v-14" /></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /> <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"> <path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /> <path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></symbol>
+  <symbol id="i-burst" viewBox="0 0 100 100"><path d="m19.6 66.5 19.7-11 .3-1-.3-.5h-1l-3.3-.2-11.2-.3L14 53l-9.5-.5-2.4-.5L0 49l.2-1.5 2-1.3 2.9.2 6.3.5 9.5.6 6.9.4L38 49.1h1.6l.2-.7-.5-.4-.4-.4L29 41l-10.6-7-5.6-4.1-3-2-1.5-2-.6-4.2 2.7-3 3.7.3.9.2 3.7 2.9 8 6.1L37 36l1.5 1.2.6-.4.1-.3-.7-1.1L33 25l-6-10.4-2.7-4.3-.7-2.6c-.3-1-.4-2-.4-3l3-4.2L28 0l4.2.6L33.8 2l2.6 6 4.1 9.3L47 29.9l2 3.8 1 3.4.3 1h.7v-.5l.5-7.2 1-8.7 1-11.2.3-3.2 1.6-3.8 3-2L61 2.6l2 2.9-.3 1.8-1.1 7.7L59 27.1l-1.5 8.2h.9l1-1.1 4.1-5.4 6.9-8.6 3-3.5L77 13l2.3-1.8h4.3l3.1 4.7-1.4 4.9-4.4 5.6-3.7 4.7-5.3 7.1-3.2 5.7.3.4h.7l12-2.6 6.4-1.1 7.6-1.3 3.5 1.6.4 1.6-1.4 3.4-8.2 2-9.6 2-14.3 3.3-.2.1.2.3 6.4.6 2.8.2h6.8l12.6 1 3.3 2 1.9 2.7-.3 2-5.1 2.6-6.8-1.6-16-3.8-5.4-1.3h-.8v.4l4.6 4.5 8.3 7.5L89 80.1l.5 2.4-1.3 2-1.4-.2-9.2-7-3.6-3-8-6.8h-.5v.7l1.8 2.7 9.8 14.7.5 4.5-.7 1.4-2.6 1-2.7-.6-5.8-8-6-9-4.7-8.2-.5.4-2.9 30.2-1.3 1.5-3 1.2-2.5-2-1.4-3 1.4-6.2 1.6-8 1.3-6.4 1.2-7.9.7-2.6v-.2H49L43 72l-9 12.3-7.2 7.6-1.7.7-3-1.5.3-2.8L24 86l10-12.8 6-7.9 4-4.6-.1-.5h-.3L17.2 77.4l-4.7.6-2-2 .2-3 1-1 8-5.5Z"/></symbol>
+</svg>
+<a href="#main" class="btn btn-dark btn-sm" style="position:fixed;left:12px;top:-60px;z-index:80" onfocus="this.style.top='12px'" onblur="this.style.top='-60px'">Skip to content</a>
+<div class="nav-shell" id="navShell">
+  <div class="nav" data-a="nav">
+    <div class="nav-l">
+      <a href="#home" class="logo" aria-label="CRCi Hub home">
+        <span class="logo-mark">CRCi</span>
+        <span class="logo-word">CRCi Hub</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary" id="navLinks">
+        <span class="nav-ind" id="navInd"></span>
+        <a href="#about">About</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#impact">Impact</a>
+        <a href="#demo">Demo</a>
+        <a href="#faqs">FAQs</a>
+      </nav>
+    </div>
+    <div class="nav-r">
+      <button class="icon-btn theme-btn" aria-pressed="false" title="Switch to dark mode" aria-label="Dark mode"><svg class="sun"><use href="#i-sun"/></svg><svg class="moon"><use href="#i-moon"/></svg></button>
+      <a href="#signin" class="nav-text" id="navSignin">Sign in</a>
+      <a href="#enroll" class="btn btn-dark btn-sm">
+        <span class="roll"><span>Enroll your ward</span><span aria-hidden="true">Enroll your ward</span></span>
+        <span class="ic"><svg><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+    <button class="menu-btn" id="menuOpen" aria-expanded="false" aria-controls="sheet"><svg><use href="#i-menu"/></svg>Menu</button>
+  </div>
+</div>
+<div class="curtain" id="curtain" aria-hidden="true"><span>CRCi <i>Hub</i></span></div>
+<main id="main">
+<div class="page" data-page="home" data-title="CRCi Hub">
+<!-- ================= HERO ================= -->
+<header class="hero" id="s-top">
+  <canvas id="shader" aria-hidden="true"></canvas>
+  <div class="hero-veil"></div>
+
+  <div class="hero-body">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow" data-a="fade"><i></i>Literacy &amp; mentorship, ages 5-14</div>
+        <h1 id="heroTitle">
+          <span class="ln"><span>Helping every child read,</span></span>
+          <span class="ln"><span><span class="serif">understand</span> and thrive.</span></span>
+        </h1>
+        <p class="hero-sub" data-a="fade">One-on-one reading sessions with vetted mentors, and progress every guardian can see.</p>
+        <div class="cta-row" data-a="fade">
+          <a href="#enroll" class="btn btn-orange">
+            <span class="roll"><span>Enroll your ward</span><span aria-hidden="true">Enroll your ward</span></span>
+            <span class="ic"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+          <a href="#demo" class="badge-pill">
+            <span class="pi-play"><svg><use href="#i-play"/></svg></span>
+            Try the demo
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <figure class="hero-photo" data-a="photo"><img src="assets/kid.webp" alt="A young learner at his desk with an exercise book and pencil" width="1400" height="933" decoding="async" fetchpriority="high"></figure>
+        <a href="#signin" data-role="guardian" class="spot liquid-glass" data-a="spot" aria-label="Example ward progress. Open the guardian portal">
+          <div class="spot-top">
+            <span class="mono" style="color:var(--ink-2)">Ward progress</span>
+            <span class="live"><i></i>Live</span>
+          </div>
+          <div class="spot-who">
+            <div class="ava">AO</div>
+            <div><strong>Advanced Reader</strong><small>Level 3, Critical Analysis</small></div>
+          </div>
+          <div class="spot-ring">
+            <div class="ring">
+              <svg viewBox="0 0 96 96"><circle cx="48" cy="48" r="40" fill="none" stroke="var(--line)" stroke-width="8"/><circle class="ring-arc" data-v="94.8" cx="48" cy="48" r="40" fill="none" stroke="var(--orange)" stroke-width="8" stroke-linecap="round" stroke-dasharray="251.33" stroke-dashoffset="13.07"/></svg>
+              <div class="v"><div><span class="count" data-to="94.8" data-dec="1">94.8</span>%<small>comprehension</small></div></div>
+            </div>
+            <div class="kv">
+              <div>Books read <b class="tnum"><span class="count" data-to="24">24</span></b></div>
+              <div>Cohort rank <b>Top 5%</b></div>
+              <div>Mentor <b>Sarah Jenkins</b></div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= STRIP ================= -->
+<section class="strip" aria-label="Program at a glance">
+  <div class="wrap strip-in">
+    <p>Reading support trusted by families in <b style="color:var(--ink);font-weight:600">45+ partner communities.</b></p>
+    <div class="marquee" aria-hidden="true">
+      <div class="mq-track" id="mq"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PURPOSE ================= -->
+<section class="purpose" id="s-purpose">
+  <div class="wrap">
+    <h2 class="h-lg" data-a="words">Built for the communities that need it most.</h2>
+
+    <div class="p-grid">
+      <div class="p-copy">
+        <p>Classrooms rarely give early readers the one-on-one attention they need to get past phonics and fluency hurdles. CRCi Hub links schools, parents and mentors in one structured system.</p>
+        <div><a href="#about" class="btn btn-orange">
+          <span class="roll"><span>About CRCi Hub</span><span aria-hidden="true">See how it works</span></span>
+          <span class="ic"><svg><use href="#i-arrow"/></svg></span>
+        </a></div>
+      </div>
+
+      <div class="tile reader" data-speed="1.08" aria-label="Phonics audio tracking example">
+        <div class="reader-h">
+          <span class="mono">Read-aloud tracking</span>
+          <span class="live"><i></i>Recording</span>
+        </div>
+        <p class="reader-text" id="readerText">Ada carried the clay pot down to the river before the sun was high.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+          <div class="syll" id="syll"><span>ri</span><span>·</span><span>ver</span></div>
+          <div class="wave" style="flex:1;min-width:120px;max-width:220px" id="wave"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat">
+      <div data-a="up">
+        <div class="fi"><svg><use href="#i-headphones"/></svg></div>
+        <h3>Structured phonics &amp; audio tracking</h3>
+        <p>Learners read aloud and get real-time feedback, with every recording available for review.</p>
+      </div>
+      <div data-a="up">
+        <div class="fi"><svg><use href="#i-shield"/></svg></div>
+        <h3>Safe, moderated environment</h3>
+        <p>Sessions run in supervised digital rooms with a full audit trail for guardians.</p>
+      </div>
+      <div data-a="up">
+        <div class="fi"><svg><use href="#i-book"/></svg></div>
+        <h3>Cultural &amp; inclusive storybooks</h3>
+        <p>Curated reading lists mix local stories with diverse global classics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMPACT ================= -->
+<section class="impact" id="s-impact">
+  <div class="wrap">
+    <div class="impact-head">
+      <h2 class="h-xl" data-a="words">Progress you can <span class="serif">count.</span></h2>
+      <div style="display:grid;gap:22px;justify-items:start" data-a="up"><p class="lede">Every session is logged, every book is signed off, and every guardian can see the numbers behind their child's progress.</p><a href="#impact" class="btn btn-dark btn-sm"><span class="roll"><span>See the full impact</span><span aria-hidden="true">See the full impact</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a></div>
+    </div>
+
+    <div class="bento">
+      <article class="b b-orange b-span" data-a="card">
+        <span class="mono">Active students</span>
+        <div>
+          <div class="big"><span class="count" data-to="1200" data-sep="1">1,200</span><sup>+</sup></div>
+          <p class="cap" style="margin-top:12px">learners reading with a mentor across <b style="color:#fff">45+ partner communities.</b></p>
+        </div>
+        <div class="dots" id="dots" aria-hidden="true"></div>
+      </article>
+      <article class="b b-plum" data-a="card">
+        <span class="mono">Hours read</span>
+        <svg width="34" height="34" style="color:var(--leaf)" aria-hidden="true"><use href="#i-clock"/></svg>
+        <div>
+          <div class="big"><span class="count" data-to="15000" data-sep="1">15,000</span><sup>+</sup></div>
+          <p class="cap" style="margin-top:8px">hours of guided reading logged.</p>
+        </div>
+      </article>
+      <article class="b b-plum" data-a="card">
+        <span class="mono">Pass rate growth</span>
+        <svg width="34" height="34" style="color:var(--leaf)" aria-hidden="true"><use href="#i-chart"/></svg>
+        <div>
+          <div class="big"><span class="count" data-to="98">98</span><sup>%</sup></div>
+          <p class="cap" style="margin-top:8px">growth in pass rates among enrolled learners.</p>
+        </div>
+      </article>
+      <article class="b b-white" data-a="card">
+        <span class="mono">Vetted mentors</span>
+        <div class="mentor-stack" aria-hidden="true"><span class="ava">FK</span><span class="ava plum">SJ</span><span class="ava">TA</span><span class="ava plum">+</span></div>
+        <div>
+          <div class="big"><span class="count" data-to="120">120</span><sup>+</sup></div>
+          <p class="cap" style="margin-top:8px">background-checked, credentialed literacy mentors.</p>
+        </div>
+      </article>
+      <article class="b b-white" data-a="card">
+        <span class="mono">Guardian visibility</span>
+        <svg class="mini-ring" viewBox="0 0 84 84" aria-hidden="true"><circle cx="42" cy="42" r="34" fill="none" stroke="#EEF6F0" stroke-width="10"/><circle class="ring-arc" data-v="100" cx="42" cy="42" r="34" fill="none" stroke="#064E3B" stroke-width="10" stroke-linecap="round" stroke-dasharray="213.6" stroke-dashoffset="0" transform="rotate(-90 42 42)"/></svg>
+        <div>
+          <div class="big"><span class="count" data-to="100">100</span><sup>%</sup></div>
+          <p class="cap" style="margin-top:8px">of sessions recorded and open to guardians.</p>
+        </div>
+      </article>
+      <article class="b b-white b-span" data-a="card">
+        <span class="mono">Guardian rating</span>
+        <div style="display:flex;align-items:end;justify-content:space-between;gap:20px;flex-wrap:wrap">
+          <div>
+            <div class="big"><span class="count" data-to="4.9" data-dec="1">4.9</span><span style="font-size:.45em;color:var(--ink-3);letter-spacing:-.02em">/5</span></div>
+            <div class="stars" style="margin-top:14px"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          </div>
+          <p class="cap">Guardians rate the program on mentor quality, session safety and visible progress.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="how" id="s-how">
+  <div class="how-pin" id="howPin">
+    <div class="wrap">
+      <div class="how-top">
+        <h2 class="h-xl" style="max-width:15ch">From first test to <span class="serif" >first chapter</span> book.</h2>
+        <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap"><a href="#how-it-works" class="btn btn-dark btn-sm"><span class="roll"><span>Walk through each step</span><span aria-hidden="true">Walk through each step</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a><div class="how-prog" aria-hidden="true"><span class="tnum" id="howNum">01</span><span class="bar"><i id="howBar"></i></span><span>04</span></div></div>
+      </div>
+      <div class="steps" id="steps">
+        <article class="step">
+          <div class="step-h"><span class="step-n">01</span><span class="mono" style="color:var(--ink-3)">10 minutes</span></div>
+          <div class="step-art">
+            <div class="timer">
+              <div class="ring">
+                <svg viewBox="0 0 110 110"><circle cx="55" cy="55" r="46" fill="none" stroke="#F0FDF4" stroke-width="9"/><circle id="timerArc" cx="55" cy="55" r="46" fill="none" stroke="#16A34A" stroke-width="9" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="72"/></svg>
+                <div class="v"><div><span class="tnum" id="timerTxt">07:30</span><small>baseline</small></div></div>
+              </div>
+              <div class="stage-chips"><div>Phonics <b>Stage 2</b></div><div>Vocabulary <b>Stage 1</b></div><div>Fluency <b>Stage 2</b></div></div>
+            </div>
+          </div>
+          <div><h3>Diagnostic assessment</h3><p>A 10-minute baseline reading test finds your child's reading stage and vocabulary needs.</p></div>
+        </article>
+        <article class="step">
+          <div class="step-h"><span class="step-n">02</span><span class="mono" style="color:var(--ink-3)">Matching</span></div>
+          <div class="step-art">
+            <div class="match">
+              <div class="chips">
+                <span class="chip">Schedule <b>Sat 10:00</b></span>
+                <span class="chip">Language <b>English, Yoruba</b></span>
+                <span class="chip">Pace <b>Steady</b></span>
+              </div>
+              <svg class="lines" viewBox="0 0 60 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 18 C 30 18, 30 60, 60 60 M0 60 L60 60 M0 102 C 30 102, 30 60, 60 60" fill="none" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="3 3"/></svg>
+              <div class="match-who"><div class="ava plum">FK</div><strong>Certified coach</strong>Matched</div>
+            </div>
+          </div>
+          <div><h3>Mentor alignment</h3><p>We pair your child with a certified literacy coach by schedule, language and learning pace.</p></div>
+        </article>
+        <article class="step">
+          <div class="step-h"><span class="step-n">03</span><span class="mono" style="color:var(--ink-3)">Weekly, live</span></div>
+          <div class="step-art">
+            <div class="week">
+              <div><span></span>M</div><div><span></span>T</div><div><span class="s"></span>W</div><div><span></span>T</div><div><span></span>F</div><div><span class="s"></span>S</div><div><span></span>S</div>
+            </div>
+          </div>
+          <div><h3>Guided reading sessions</h3><p>Weekly 30-minute live sessions where mentor and child read together and work through difficult words.</p></div>
+        </article>
+        <article class="step">
+          <div class="step-h"><span class="step-n">04</span><span class="mono" style="color:var(--ink-3)">Guardian portal</span></div>
+          <div class="step-art">
+            <div class="checks">
+              <div><span class="ck"><svg><use href="#i-check"/></svg></span>Session recording watched</div>
+              <div><span class="ck"><svg><use href="#i-check"/></svg></span>Mentor notes read</div>
+              <div><span class="ck"><svg><use href="#i-check"/></svg></span>Book milestone<span class="sign">Signed off</span></div>
+            </div>
+          </div>
+          <div><h3>Guardian verification</h3><p>Parents watch recordings, read mentor notes and sign off on book milestones in the portal.</p></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRACKS ================= -->
+<section class="tracks" id="s-tracks">
+  <div class="wrap">
+    <div class="tracks-head">
+      <h2 class="h-xl" data-a="words">Three levels that grow with your child.</h2>
+      <div style="display:grid;gap:22px;justify-items:start" data-a="up"><p class="lede">Each track moves a learner one step further, from sounding out letters to analysing what they read and saying what they think.</p><a href="#tracks" class="btn btn-dark btn-sm" data-finder="1"><span class="roll"><span>Find your child's level</span><span aria-hidden="true">Find your child's level</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a></div>
+    </div>
+    <div class="stair">
+      <article class="tk" data-a="tk">
+        <div class="tk-top"><span class="tk-age">Ages 5-7</span><span class="tk-tag">Most popular</span></div>
+        <span class="tk-lvl">Level 1</span>
+        <h3>Early phonics &amp; sounding out</h3>
+        <p>Letter sounds, sight words, short vowels and sentence building with picture stories.</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>15-minute short stories</li>
+          <li><svg><use href="#i-check"/></svg>Pronunciation audio aids</li>
+          <li><svg><use href="#i-check"/></svg>Reward badge system</li>
+        </ul>
+      </article>
+      <article class="tk" data-a="tk">
+        <div class="tk-top"><span class="tk-age">Ages 8-10</span></div>
+        <span class="tk-lvl" >Level 2</span>
+        <h3>Fluency &amp; vocabulary expansion</h3>
+        <p>From learning to read to reading to learn: context clues, paragraph flow and simple comprehension quizzes.</p>
+        <ul>
+          <li><svg ><use href="#i-check"/></svg>Chapter-based storybooks</li>
+          <li><svg ><use href="#i-check"/></svg>Live mentor Q&amp;A</li>
+          <li><svg ><use href="#i-check"/></svg>Weekly guardian summary</li>
+        </ul>
+      </article>
+      <article class="tk" data-a="tk">
+        <div class="tk-top"><span class="tk-age">Ages 11-14</span></div>
+        <span class="tk-lvl" style="color:#4ADE80">Level 3</span>
+        <h3>Critical analysis &amp; expression</h3>
+        <p>Deep comprehension, essay outlining, character analysis and sharing opinions on nonfiction.</p>
+        <ul>
+          <li><svg style="color:#4ADE80"><use href="#i-check"/></svg>Literature &amp; nonfiction</li>
+          <li><svg style="color:#4ADE80"><use href="#i-check"/></svg>Creative writing exercises</li>
+          <li><svg style="color:#4ADE80"><use href="#i-check"/></svg>Public speaking practice</li>
+        </ul>
+      </article>
+    </div>
+    <div class="axis" aria-hidden="true">
+      <div class="line"></div>
+      <span class="tick" style="left:0%;transform:none;justify-items:start"><i></i>age 5</span>
+      <span class="tick" style="left:33.33%"><i></i>8</span>
+      <span class="tick" style="left:66.66%"><i></i>11</span>
+      <span class="tick" style="left:100%;transform:translateX(-100%);justify-items:end"><i></i>14</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEMO TEASER ================= -->
+<section class="sec" id="s-demo">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h-xl" data-a="words">See a session before you <span class="serif" >enroll.</span></h2>
+      <p class="lede" data-a="up">Read a short story the way a CRCi learner does, find the right level for your child, or look around the guardian portal.</p>
+    </div>
+    <div class="teasers">
+      <a class="teaser d" href="#demo" data-a="card">
+        <div class="teaser-art">Ada carried the <span style="background:var(--orange);color:#fff;border-radius:6px;padding:0 4px">clay</span> pot down to the river.</div>
+        <div><h3>Read along</h3><p>Tap any word to break it into sounds, then answer three questions about the story.</p></div>
+        <span class="go"><i><svg><use href="#i-arrow"/></svg></i>Start the demo session</span>
+      </a>
+      <a class="teaser" href="#tracks" data-finder="1" data-a="card">
+        <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="tk-age" style="border-color:var(--line)">Age 5-7</span><span class="tk-age" style="border-color:var(--line)">8-10</span><span class="tk-age" style="background:var(--ink);color:#fff;border-color:var(--ink)">11-14</span></div>
+        <div><h3>Find your child's level</h3><p>Answer three quick questions and we'll suggest the track to start on.</p></div>
+        <span class="go"><i><svg><use href="#i-arrow"/></svg></i>Take the level finder</span>
+      </a>
+      <a class="teaser" href="#signin" data-role="guardian" data-a="card">
+        <div class="kv" style="max-width:260px"><div>Comprehension <b>94.8%</b></div><div>Books signed off <b>24</b></div><div>Next session <b>Sat 10:00</b></div></div>
+        <div><h3>Open the guardian portal</h3><p>Watch recordings, read mentor notes and sign off milestones. Any email works in this preview.</p></div>
+        <span class="go"><i><svg><use href="#i-arrow"/></svg></i>Sign in as a guardian</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VOICES ================= -->
+<section class="voices" id="s-voices">
+  <div class="wrap">
+    <div class="v-grid">
+      <div>
+        <blockquote class="quote" id="quote" style="margin:0"></blockquote>
+        <div class="q-who" id="qWho"></div>
+      </div>
+      <div class="q-list" role="tablist" aria-label="Testimonials" id="qList"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" id="s-faq">
+  <div class="wrap faq-grid">
+    <div>
+      <h2 class="h-lg" data-a="words">Questions guardians ask first.</h2>
+      <p class="lede" style="margin-top:20px" data-a="up">Still unsure? Write to support@crcihub.org and a member of the team will reply.</p>
+      <div style="margin-top:26px" data-a="up"><a href="#faqs" class="btn btn-dark btn-sm"><span class="roll"><span>See all FAQs</span><span aria-hidden="true">See all FAQs</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a></div>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+</div>
+
+<!-- ======================================================= ABOUT -->
+<div class="page" data-page="about" data-title="About - CRCi Hub" hidden>
+  <header class="ph">
+    <div class="ph-art"><div class="ph-blob a"></div><div class="ph-blob b"></div><div class="ph-flutes"></div></div>
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span>/</span><span>About CRCi</span></nav>
+      <h1 data-a="ph">A reading mentor for every child who <span class="serif">needs one.</span></h1>
+      <div class="ph-row">
+        <p class="lede" data-a="fade">CRCi Hub is a literacy and mentorship program for learners aged 5 to 14 across Africa. We pair children with vetted mentors for one-on-one reading, and we show guardians every step.</p>
+        <a href="#enroll" class="btn btn-orange" data-a="fade"><span class="roll"><span>Enroll your ward</span><span aria-hidden="true">Enroll your ward</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="sec sec-white">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h-lg" data-a="words">Early readers need attention a busy classroom can't always give.</h2>
+        <p class="lede" data-a="up">Phonics and fluency hurdles are easiest to clear one-on-one. CRCi Hub gives every learner a mentor's full attention for a focused weekly session.</p>
+      </div>
+      <div class="ratio">
+        <div class="light" style="background:var(--ground)" data-a="card">
+          <span class="mono" style="color:var(--ink-3)">A typical classroom</span>
+          <div class="crowd" aria-hidden="true" id="crowd"></div>
+          <div><h3>One teacher, a full room</h3><p>Children who are stuck on sounds or slow to decode can go unnoticed for a whole term.</p></div>
+        </div>
+        <div class="dark" data-a="card">
+          <span class="mono" style="color:rgba(255,255,255,.55)">A CRCi session</span>
+          <div class="pair" aria-hidden="true"><i></i><b></b><i></i></div>
+          <div><h3>One mentor, one learner</h3><p>Thirty minutes a week of reading aloud together, with feedback on every word that trips them up.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="network">
+        <svg class="net-svg" viewBox="0 0 520 440" role="img" aria-label="The learner at the centre, connected to mentor, guardian and school">
+          <path class="net-line" d="M260 220 L260 70"/>
+          <path class="net-line" d="M260 220 L90 340"/>
+          <path class="net-line" d="M260 220 L430 340"/>
+          <path d="M260 70 L90 340 L430 340 Z" fill="none" stroke="#BBF7D0" stroke-width="1"/>
+          <g class="net-node active" data-node="learner" tabindex="0"><circle class="o" cx="260" cy="220" r="62" fill="#022C22" stroke="#022C22"/><text x="260" y="224" text-anchor="middle" style="fill:#fff">Learner</text></g>
+          <g class="net-node" data-node="mentor" tabindex="0"><circle class="o" cx="260" cy="70" r="46" fill="#FFFFFF" stroke="#BBF7D0" stroke-width="2"/><text x="260" y="74" text-anchor="middle">Mentor</text></g>
+          <g class="net-node" data-node="guardian" tabindex="0"><circle class="o" cx="90" cy="340" r="46" fill="#FFFFFF" stroke="#BBF7D0" stroke-width="2"/><text x="90" y="344" text-anchor="middle">Guardian</text></g>
+          <g class="net-node" data-node="school" tabindex="0"><circle class="o" cx="430" cy="340" r="46" fill="#FFFFFF" stroke="#BBF7D0" stroke-width="2"/><text x="430" y="344" text-anchor="middle">School</text></g>
+          <text x="275" y="150" style="font-family:var(--f-mono);font-size:10px;fill:#6B7280">READS WITH</text>
+          <text x="96" y="268" style="font-family:var(--f-mono);font-size:10px;fill:#6B7280">WATCHES &amp; SIGNS OFF</text>
+          <text x="352" y="268" style="font-family:var(--f-mono);font-size:10px;fill:#6B7280">ENROLS &amp; TRACKS</text>
+        </svg>
+        <div>
+          <h2 class="h-lg" data-a="words" style="margin-bottom:24px">Schools, parents and mentors, linked around each child.</h2>
+          <div class="net-info" id="netInfo" aria-live="polite"></div>
+          <div class="net-tabs" id="netTabs">
+            <button aria-pressed="true" data-node="learner">Learner</button>
+            <button aria-pressed="false" data-node="mentor">Mentor</button>
+            <button aria-pressed="false" data-node="guardian">Guardian</button>
+            <button aria-pressed="false" data-node="school">School</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-white">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h-lg" data-a="words">Nobody hosts a session until they've cleared every check.</h2>
+        <p class="lede" data-a="up">Every CRCi mentor passes the same three checks before they meet a learner.</p>
+      </div>
+      <div class="pipe" id="pipe">
+        <div class="pipe-line"><i></i></div>
+        <div class="pipe-step"><div class="pipe-dot"><svg><use href="#i-shield"/></svg></div><div><h4>Background check</h4><p>Identity and background screening for every applicant.</p></div></div>
+        <div class="pipe-step"><div class="pipe-dot"><svg><use href="#i-file"/></svg></div><div><h4>Credential verification</h4><p>We confirm each mentor's education credentials.</p></div></div>
+        <div class="pipe-step"><div class="pipe-dot"><svg><use href="#i-book"/></svg></div><div><h4>15+ hours of training</h4><p>Specialised child literacy training before the first session.</p></div></div>
+        <div class="pipe-step"><div class="pipe-dot"><svg><use href="#i-check"/></svg></div><div><h4>Ready to mentor</h4><p>Matched to learners by schedule, language and pace.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h-lg" data-a="words">Six portals, one shared picture of every reader.</h2>
+        <p class="lede" data-a="up">Pick a portal to look around. This preview accepts any email and password.</p>
+      </div>
+      <div class="portals">
+        <a class="portal-card" href="#signin" data-role="guardian" data-a="card"><span class="pi"><svg><use href="#i-heart"/></svg></span><h4>Guardians</h4><p>Watch recordings, read mentor notes and sign off book milestones.</p><span class="go">Guardian portal <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="portal-card" href="#signin" data-role="student" data-a="card"><span class="pi"><svg><use href="#i-book"/></svg></span><h4>Students</h4><p>Keep a reading streak, collect badges and see the next session.</p><span class="go">Student portal <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="portal-card" href="#signin" data-role="teacher" data-a="card"><span class="pi"><svg><use href="#i-school"/></svg></span><h4>Teachers &amp; educators</h4><p>Track a whole class by level and comprehension.</p><span class="go">Educator portal <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="portal-card" href="#signin" data-role="volunteer" data-a="card"><span class="pi"><svg><use href="#i-users"/></svg></span><h4>Community volunteers</h4><p>See your sessions, lesson plans and logged hours.</p><span class="go">Volunteer portal <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="portal-card" href="#signin" data-role="sponsor" data-a="card"><span class="pi"><svg><use href="#i-award"/></svg></span><h4>Sponsors</h4><p>Follow the readers you support from first test to first book.</p><span class="go">Sponsor portal <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="portal-card" href="#signin" data-role="donor" data-a="card"><span class="pi"><svg><use href="#i-gift"/></svg></span><h4>Donors</h4><p>Pledge support and see how the program is growing.</p><span class="go">Donor portal <svg><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ======================================================= HOW IT WORKS -->
+<div class="page" data-page="how-it-works" data-title="How it works - CRCi Hub" hidden>
+  <header class="ph">
+    <div class="ph-art"><div class="ph-blob a"></div><div class="ph-blob b"></div><div class="ph-flutes"></div></div>
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span>/</span><span>How it works</span></nav>
+      <h1 data-a="ph">Four steps from first test to <span class="serif">first chapter book.</span></h1>
+      <p class="lede" data-a="fade">Scroll through what happens after you enroll, from a 10-minute baseline test to the moment you sign off your child's next book.</p>
+    </div>
+  </header>
+
+  <section class="sec sec-white">
+    <div class="wrap scrolly">
+      <div class="sc-steps" id="scSteps">
+        <article class="sc-step active" data-i="0">
+          <span class="step-n">01</span>
+          <h3>Diagnostic assessment</h3>
+          <p>A 10-minute baseline reading test identifies your child's reading stage and vocabulary needs.</p>
+          <ul><li><svg><use href="#i-check"/></svg>Done online, at home</li><li><svg><use href="#i-check"/></svg>Sets the starting level</li><li><svg><use href="#i-check"/></svg>Results shared with you</li></ul>
+        </article>
+        <article class="sc-step" data-i="1">
+          <span class="step-n">02</span>
+          <h3>Mentor alignment</h3>
+          <p>We match your child with a certified literacy coach based on schedule, language and learning pace.</p>
+          <ul><li><svg><use href="#i-check"/></svg>Vetted, trained mentors</li><li><svg><use href="#i-check"/></svg>A time that suits your family</li><li><svg><use href="#i-check"/></svg>A mentor who speaks your child's language</li></ul>
+        </article>
+        <article class="sc-step" data-i="2">
+          <span class="step-n">03</span>
+          <h3>Guided reading sessions</h3>
+          <p>Weekly 30-minute live sessions where mentor and child read together and work through difficult words.</p>
+          <ul><li><svg><use href="#i-check"/></svg>Supervised digital rooms</li><li><svg><use href="#i-check"/></svg>Real-time pronunciation feedback</li><li><svg><use href="#i-check"/></svg>Every session recorded</li></ul>
+        </article>
+        <article class="sc-step" data-i="3">
+          <span class="step-n">04</span>
+          <h3>Guardian verification</h3>
+          <p>You watch session recordings, read mentor notes and sign off on book milestones in the portal.</p>
+          <ul><li><svg><use href="#i-check"/></svg>Full audit trail</li><li><svg><use href="#i-check"/></svg>Sign off from your phone</li><li><svg><use href="#i-check"/></svg>Weekly progress summary</li></ul>
+        </article>
+      </div>
+      <div class="sc-stage" aria-hidden="true">
+        <div class="device">
+          <div class="screen on" data-s="0">
+            <div class="scr-top"><span>Baseline test</span><span class="tnum">Question 4 of 12</span></div>
+            <div class="scr-bar"><i style="width:33%"></i></div>
+            <div class="scr-h">Which word rhymes with <span class="serif" >cat</span>?</div>
+            <div class="scr-opts"><span>cup</span><span class="sel">hat</span><span>cot</span><span>can</span></div>
+            <div class="scr-card" style="margin-top:auto;display:flex;justify-content:space-between"><span>Time left</span><b class="tnum">06:40</b></div>
+          </div>
+          <div class="screen" data-s="1">
+            <div class="scr-top"><span>Your match</span><span class="tag g">Matched</span></div>
+            <div style="display:flex;gap:12px;align-items:center"><span class="ava plum" style="width:56px;height:56px">FK</span><div><div class="scr-h">Your literacy mentor</div><small style="color:var(--ink-2)">Certified literacy coach</small></div></div>
+            <div class="scr-card" style="display:grid;gap:8px"><div style="display:flex;justify-content:space-between"><span>Schedule</span><b>Sat 10:00</b></div><div style="display:flex;justify-content:space-between"><span>Language</span><b>English, Yoruba</b></div><div style="display:flex;justify-content:space-between"><span>Pace</span><b>Steady</b></div></div>
+            <div class="scr-card" style="margin-top:auto">First session booked for this Saturday.</div>
+          </div>
+          <div class="screen" data-s="2">
+            <div class="scr-top"><span class="live"><i></i>Live</span><span class="tnum">12:48 / 30:00</span></div>
+            <div class="scr-video"><div class="ppl">FK</div><div class="pip"></div><span class="cap">Reading together</span></div>
+            <div class="scr-q">The <span style="background:var(--orange);color:#fff;border-radius:6px;padding:0 4px">river</span> was cool and clear.</div>
+            <div class="syll"><span class="hl">ri</span><span>·</span><span class="hl">ver</span></div>
+          </div>
+          <div class="screen" data-s="3">
+            <div class="scr-top"><span>Guardian portal</span><span class="tag g">1 to sign off</span></div>
+            <div class="scr-h">Book 24 is ready for your sign-off</div>
+            <div class="scr-card" style="display:flex;gap:10px;align-items:center"><span class="play"><svg><use href="#i-play"/></svg></span><div style="flex:1"><b>Session recording</b><div class="prog"><i style="width:100%"></i></div></div></div>
+            <div class="note"><b>Mentor note</b>Read with expression today. Practise "-tion" words this week.</div>
+            <span class="btn-mini" style="margin-top:auto;align-self:start">Sign off milestone</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h-lg" data-a="words">What happens in 30 minutes.</h2>
+        <p class="lede" data-a="up">A sample session plan. Mentors adjust the timing to each learner.</p>
+      </div>
+      <div class="segbar" id="segbar">
+        <div class="seg" style="flex:5;background:var(--plum-2)"><span>0-5 min</span><b>Warm-up</b></div>
+        <div class="seg" style="flex:15;background:var(--orange)"><span>5-20 min</span><b>Guided reading</b></div>
+        <div class="seg" style="flex:7;background:var(--plum)"><span>20-27 min</span><b>Word work</b></div>
+        <div class="seg" style="flex:3;background:var(--coral)"><span>27-30</span><b>Recap</b></div>
+      </div>
+      <div class="seg-scale"><span>0</span><span>10</span><span>20</span><span>30 min</span></div>
+      <div class="seg-detail">
+        <div><strong>Warm-up</strong>Re-read a favourite page and review last week's tricky words.</div>
+        <div><strong>Guided reading</strong>Child reads aloud; mentor prompts, models and praises.</div>
+        <div><strong>Word work</strong>Sounding out the words flagged during reading.</div>
+        <div><strong>Recap</strong>Three quick questions, then a note for the guardian.</div>
+      </div>
+      <div style="margin-top:44px;display:flex;gap:12px;flex-wrap:wrap">
+        <a href="#demo" class="btn btn-orange"><span class="roll"><span>Try a demo session</span><span aria-hidden="true">Try a demo session</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a>
+        <a href="#enroll" class="btn btn-light"><span class="roll"><span>Enroll your ward</span><span aria-hidden="true">Enroll your ward</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ======================================================= TRACKS -->
+<div class="page" data-page="tracks" data-title="Learning tracks - CRCi Hub" hidden>
+  <header class="ph">
+    <div class="ph-art"><div class="ph-blob a"></div><div class="ph-blob b"></div><div class="ph-flutes"></div></div>
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span>/</span><span>Learning tracks</span></nav>
+      <h1 data-a="ph">Three levels. One reader, <span class="serif">growing.</span></h1>
+      <p class="lede" data-a="fade">Tracks for ages 5 to 14, from sounding out letters to analysing literature. Not sure where to start? Use the level finder.</p>
+    </div>
+  </header>
+
+  <section class="sec" id="finder">
+    <div class="wrap">
+      <div class="finder">
+        <form class="finder-q" id="finderForm" onsubmit="return false">
+          <div>
+            <label class="q-label" for="fAge">How old is your child?</label>
+            <div class="age-out"><b class="tnum" id="fAgeOut">8</b><span>years old</span></div>
+            <input type="range" id="fAge" min="5" max="14" value="8" step="1">
+            <div class="age-ticks"><span>5</span><span>8</span><span>11</span><span>14</span></div>
+          </div>
+          <div>
+            <span class="q-label" id="fq2">Can they read a short sentence on their own?</span>
+            <div class="opts" role="group" aria-labelledby="fq2" data-q="read">
+              <button type="button" class="opt" aria-pressed="false" data-v="0">Not yet</button>
+              <button type="button" class="opt" aria-pressed="true" data-v="1">With some help</button>
+              <button type="button" class="opt" aria-pressed="false" data-v="2">Yes, easily</button>
+            </div>
+          </div>
+          <div>
+            <span class="q-label" id="fq3">Can they explain what a chapter or article was about?</span>
+            <div class="opts" role="group" aria-labelledby="fq3" data-q="comp">
+              <button type="button" class="opt" aria-pressed="true" data-v="0">Not yet</button>
+              <button type="button" class="opt" aria-pressed="false" data-v="1">Sometimes</button>
+              <button type="button" class="opt" aria-pressed="false" data-v="2">Yes</button>
+            </div>
+          </div>
+        </form>
+        <div class="finder-r" aria-live="polite">
+          <span style="color:var(--on-dark-2)">Suggested starting track</span>
+          <div class="lvl" id="fLvl">Level 2</div>
+          <h3 id="fTitle">Fluency &amp; vocabulary expansion</h3>
+          <p id="fWhy">Your child is ready to move from learning to read to reading to learn.</p>
+          <a href="#enroll" class="btn btn-light" id="fGo"><span class="roll"><span>Choose this level</span><span aria-hidden="true">Choose this level</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-white">
+    <div class="wrap">
+      <div class="tk-rows">
+        <article class="tk-row o" id="track-1" data-a="card">
+          <div>
+            <div class="tk-top" style="justify-content:flex-start;gap:10px"><span class="tk-age">Ages 5-7</span><span class="tk-tag">Most popular</span></div>
+            <h3>Early phonics &amp; sounding out</h3>
+            <p>Letter sounds, sight words, short vowels and sentence building with picture stories.</p>
+            <a href="#enroll" class="btn btn-light" data-level="1"><span class="roll"><span>Choose Level 1</span><span aria-hidden="true">Choose Level 1</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a>
+          </div>
+          <div>
+            <div class="skills"><span>Letter sounds</span><span>Sight words</span><span>Short vowels</span><span>Sentence building</span><span>Picture stories</span></div>
+            <div class="tk-feats">
+              <div><svg><use href="#i-book"/></svg>15-minute short stories</div>
+              <div><svg><use href="#i-headphones"/></svg>Pronunciation audio aids</div>
+              <div><svg><use href="#i-award"/></svg>Reward badge system</div>
+            </div>
+          </div>
+        </article>
+        <article class="tk-row" id="track-2" data-a="card" style="background:var(--ground)">
+          <div>
+            <div class="tk-top" style="justify-content:flex-start"><span class="tk-age">Ages 8-10</span></div>
+            <h3>Fluency &amp; vocabulary expansion</h3>
+            <p>From learning to read to reading to learn, with context clues, paragraph flow and simple comprehension quizzes.</p>
+            <a href="#enroll" class="btn btn-dark" data-level="2"><span class="roll"><span>Choose Level 2</span><span aria-hidden="true">Choose Level 2</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a>
+          </div>
+          <div>
+            <div class="skills"><span>Context clues</span><span>Paragraph flow</span><span>Vocabulary</span><span>Comprehension quizzes</span></div>
+            <div class="tk-feats">
+              <div><svg ><use href="#i-book"/></svg>Chapter-based storybooks</div>
+              <div><svg ><use href="#i-users"/></svg>Live mentor Q&amp;A</div>
+              <div><svg ><use href="#i-file"/></svg>Weekly guardian summary</div>
+            </div>
+          </div>
+        </article>
+        <article class="tk-row p" id="track-3" data-a="card">
+          <div>
+            <div class="tk-top" style="justify-content:flex-start"><span class="tk-age">Ages 11-14</span></div>
+            <h3>Critical analysis &amp; expression</h3>
+            <p>Deep comprehension, essay outlining, character analysis and sharing opinions on nonfiction.</p>
+            <a href="#enroll" class="btn btn-light" data-level="3"><span class="roll"><span>Choose Level 3</span><span aria-hidden="true">Choose Level 3</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a>
+          </div>
+          <div>
+            <div class="skills"><span>Deep comprehension</span><span>Essay outlining</span><span>Character analysis</span><span>Opinion writing</span></div>
+            <div class="tk-feats">
+              <div><svg style="color:var(--leaf)"><use href="#i-book"/></svg>Literature &amp; nonfiction</div>
+              <div><svg style="color:var(--leaf)"><use href="#i-file"/></svg>Creative writing exercises</div>
+              <div><svg style="color:var(--leaf)"><use href="#i-users"/></svg>Public speaking practice</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+</div>
+
+<!-- ======================================================= IMPACT -->
+<div class="page" data-page="impact" data-title="Impact - CRCi Hub" hidden>
+  <header class="ph">
+    <div class="ph-art"><div class="ph-blob a"></div><div class="ph-blob b"></div><div class="ph-flutes"></div></div>
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span>/</span><span>Our impact</span></nav>
+      <h1 data-a="ph">Numbers every guardian can <span class="serif">check.</span></h1>
+      <p class="lede" data-a="fade">Because every session is recorded and every book is signed off, our progress is counted the same way you count your child's.</p>
+    </div>
+  </header>
+  <section class="sec sec-white">
+    <div class="wrap">
+      <div class="stat-band">
+        <div><div class="big"><span class="count" data-to="1200" data-sep="1">1,200</span><sup>+</sup></div><p>active students reading with a mentor.</p></div>
+        <div><div class="big"><span class="count" data-to="45">45</span><sup>+</sup></div><p>partner communities across the program.</p></div>
+        <div><div class="big"><span class="count" data-to="15000" data-sep="1">15,000</span><sup>+</sup></div><p>hours of guided reading logged.</p></div>
+        <div><div class="big"><span class="count" data-to="98">98</span><sup>%</sup></div><p>growth in pass rates among enrolled learners.</p></div>
+        <div><div class="big"><span class="count" data-to="120">120</span><sup>+</sup></div><p>vetted, trained literacy mentors.</p></div>
+        <div><div class="big"><span class="count" data-to="4.9" data-dec="1">4.9</span><sup>/5</sup></div><p>average guardian rating.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h-lg" data-a="words">45+ partner communities, and counting.</h2>
+        <p class="lede" data-a="up">Each lit dot is one partner community. The rest is room to grow.</p>
+      </div>
+      <div class="field-dots" id="fieldDots" aria-label="45 of 120 dots lit, representing 45 partner communities" role="img"></div>
+    </div>
+  </section>
+  <section class="sec sec-white">
+    <div class="wrap">
+      <div class="measure">
+        <div data-a="up"><span class="fi"><svg><use href="#i-clock"/></svg></span><div><h4>Hours read</h4><p>Every live session is timed and added to the learner's record.</p></div></div>
+        <div data-a="up"><span class="fi"><svg><use href="#i-book"/></svg></span><div><h4>Books signed off</h4><p>A book counts once a guardian signs off the milestone.</p></div></div>
+        <div data-a="up"><span class="fi"><svg><use href="#i-chart"/></svg></span><div><h4>Comprehension</h4><p>Short quizzes after each story show how much a learner understood.</p></div></div>
+        <div data-a="up"><span class="fi"><svg><use href="#i-award"/></svg></span><div><h4>Pass rates</h4><p>School results before and after joining the program.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="stories" id="stories"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ======================================================= FAQS -->
+<div class="page" data-page="faqs" data-title="FAQs - CRCi Hub" hidden>
+  <header class="ph">
+    <div class="ph-art"><div class="ph-blob a"></div><div class="ph-blob b"></div><div class="ph-flutes"></div></div>
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span>/</span><span>FAQs</span></nav>
+      <h1 data-a="ph">Answers for guardians, mentors and <span class="serif">schools.</span></h1>
+    </div>
+  </header>
+  <section class="sec">
+    <div class="wrap faq-grid">
+      <div style="min-width:0">
+        <div class="faq-tools">
+          <label class="search"><svg><use href="#i-search"/></svg><input type="search" id="faqSearch" placeholder="Search questions" aria-label="Search questions"></label>
+          <div class="chipset" id="faqCats">
+            <button aria-pressed="true" data-c="all">All</button>
+            <button aria-pressed="false" data-c="guardians">Guardians</button>
+            <button aria-pressed="false" data-c="sessions">Sessions</button>
+            <button aria-pressed="false" data-c="mentors">Mentors</button>
+            <button aria-pressed="false" data-c="schools">Schools</button>
+          </div>
+        </div>
+        <div class="faq-list" id="faqFull"></div>
+      </div>
+      <aside class="contact">
+        <h3>Still have a question?</h3>
+        <p>Our support team answers every message.</p>
+        <div class="copy-row"><span>support@crcihub.org</span><button data-copy="support@crcihub.org">Copy</button></div>
+        <div class="copy-row"><span class="tnum">+234 907 882 7264</span><button data-copy="+234 907 882 7264">Copy</button></div>
+        <a href="#enroll" class="btn btn-orange" style="justify-self:start;margin-top:6px"><span class="roll"><span>Enroll your ward</span><span aria-hidden="true">Enroll your ward</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a>
+      </aside>
+    </div>
+  </section>
+</div>
+
+<!-- ======================================================= DEMO -->
+<div class="page" data-page="demo" data-title="Demo session - CRCi Hub" hidden>
+  <header class="ph" style="padding-bottom:40px">
+    <div class="ph-art"><div class="ph-blob a"></div><div class="ph-blob b"></div><div class="ph-flutes"></div></div>
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span>/</span><span>Demo session</span></nav>
+      <h1 data-a="ph">Try a CRCi <span class="serif">session.</span></h1>
+      <div class="ph-row">
+        <p class="lede" data-a="fade">Read "Ada and the River" along with the highlighter, tap any word to break it into sounds, then check what you understood.</p>
+        <span class="proto" data-a="fade"><b>Preview</b> Nothing you do here is saved.</span>
+      </div>
+    </div>
+  </header>
+  <section class="sec" style="padding-top:28px">
+    <div class="wrap">
+      <div class="tabs" role="tablist" id="demoTabs">
+        <span class="ind" id="demoInd"></span>
+        <button role="tab" aria-selected="true" data-t="read" id="tab-read">Read along</button>
+        <button role="tab" aria-selected="false" data-t="quiz" id="tab-quiz">Check understanding</button>
+        <button role="tab" aria-selected="false" data-t="report" id="tab-report">Guardian report</button>
+      </div>
+
+      <div data-panel="read">
+        <div class="demo-grid">
+          <div class="storybox">
+            <div class="story-top">
+              <span class="mono" style="color:var(--ink-3)"><span id="pgLabel">Page 1 of 3</span></span>
+              <span class="live" id="readLive" hidden><i></i>Reading</span>
+            </div>
+            <p class="story-text" id="storyText"></p>
+            <div class="ctrls">
+              <button class="big-play" id="readPlay" aria-label="Play read-along"><svg><use href="#i-play"/></svg></button>
+              <div class="opts" role="group" aria-label="Reading speed" id="speed">
+                <button class="opt" aria-pressed="false" data-s="900">Slow</button>
+                <button class="opt" aria-pressed="true" data-s="600">Normal</button>
+                <button class="opt" aria-pressed="false" data-s="380">Fast</button>
+              </div>
+              <div class="pages" id="pageDots"></div>
+            </div>
+          </div>
+          <aside class="wordcard" aria-live="polite">
+            <span class="mono" style="color:rgba(255,255,255,.55)">Word work</span>
+            <div class="wbig" id="wBig">river</div>
+            <div class="syll" id="wSyll"></div>
+            <p id="wTip">Tap any word in the story to see its sounds.</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <button class="btn-mini" id="wSay"><span style="display:inline-flex;gap:6px;align-items:center"><svg width="14" height="14"><use href="#i-volume"/></svg>Hear it</span></button>
+              <button class="btn-mini ghost" id="wFlag" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.3)"><span style="display:inline-flex;gap:6px;align-items:center"><svg width="14" height="14"><use href="#i-flag"/></svg>Practise this word</span></button>
+            </div>
+            <div style="margin-top:auto">
+              <span class="mono" style="color:rgba(255,255,255,.55)">Words to practise</span>
+              <div class="flags" id="flags" style="margin-top:10px"><span style="opacity:.6">None yet</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div data-panel="quiz" hidden>
+        <div class="demo-grid">
+          <div class="quiz" id="quiz"></div>
+          <aside class="wordcard">
+            <span class="mono" style="color:rgba(255,255,255,.55)">Your score</span>
+            <div class="ring" style="width:120px;height:120px">
+              <svg viewBox="0 0 96 96" style="width:120px;height:120px"><circle cx="48" cy="48" r="40" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="8"/><circle id="qRing" cx="48" cy="48" r="40" fill="none" stroke="#4ADE80" stroke-width="8" stroke-linecap="round" stroke-dasharray="251.33" stroke-dashoffset="251.33" style="transition:stroke-dashoffset .8s var(--ease)"/></svg>
+              <div class="v" style="color:#fff"><div><span id="qScore">0</span>/3<small style="color:rgba(255,255,255,.6)">correct</small></div></div>
+            </div>
+            <p>Mentors use quick questions like these at the end of each session to check comprehension.</p>
+          </aside>
+        </div>
+      </div>
+
+      <div data-panel="report" hidden>
+        <div class="demo-grid">
+          <div class="card" style="padding:clamp(22px,3.5vw,40px);border-radius:26px">
+            <div class="card-h"><h3>Session report: Ada and the River</h3><span class="tag g">Preview</span></div>
+            <div class="kpis" style="grid-template-columns:repeat(3,minmax(0,1fr))" id="repKpis"></div>
+            <div class="note" style="margin-top:20px" id="repNote"></div>
+            <div style="margin-top:20px"><span class="q-label">Words to practise this week</span><div class="opts" id="repWords"></div></div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:26px">
+              <button class="btn btn-orange" id="repSign"><span class="roll"><span>Sign off this session</span><span aria-hidden="true">Sign off this session</span></span><span class="ic"><svg><use href="#i-check"/></svg></span></button>
+              <button class="btn-ghost" id="repRestart">Start over</button>
+            </div>
+          </div>
+          <aside class="wordcard">
+            <span class="mono" style="color:rgba(255,255,255,.55)">What guardians see</span>
+            <p style="font-size:16px;color:#fff">After every real session, this report lands in the Guardian portal with the full recording.</p>
+            <a href="#enroll" class="btn btn-light" style="align-self:flex-start;margin-top:auto"><span class="roll"><span>Enroll your ward</span><span aria-hidden="true">Enroll your ward</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ======================================================= ENROLL -->
+<div class="page" data-page="enroll" data-title="Enroll - CRCi Hub" data-flow="1" hidden>
+  <section class="flow">
+    <div class="wrap wiz">
+      <aside class="rail">
+        <h2>Enroll your ward in <span class="serif">four steps.</span></h2>
+        <div class="meter-bar"><i id="wizBar"></i></div>
+        <ol id="wizRail">
+          <li class="cur"><span class="d">1</span>Guardian</li>
+          <li><span class="d">2</span>Ward</li>
+          <li><span class="d">3</span>Sessions</li>
+          <li><span class="d">4</span>Review</li>
+        </ol>
+        <span class="proto" style="background:rgba(255,255,255,.08);color:rgba(255,255,255,.7)"><b style="color:#fff">Preview</b> Nothing is sent anywhere.</span>
+      </aside>
+      <form class="panel" id="wiz" novalidate>
+        <!-- step 1 -->
+        <div class="wstep" data-step="0">
+          <div class="panel-h"><div><h3>About you</h3><p>We'll use these details to share your ward's progress.</p></div></div>
+          <div class="grid2">
+            <div class="field"><label for="gName">Full name</label><input class="inp" id="gName" name="gName" autocomplete="name" placeholder="e.g. Bisi Adebayo"><span class="emsg">Enter your full name.</span></div>
+            <div class="field"><label for="gRel">Relationship to the child</label><select class="inp" id="gRel" name="gRel"><option>Parent</option><option>Guardian</option><option>Other family member</option></select></div>
+            <div class="field"><label for="gEmail">Email</label><input class="inp" id="gEmail" name="gEmail" type="email" autocomplete="email" placeholder="you@example.com"><span class="emsg">Enter a valid email address.</span></div>
+            <div class="field"><label for="gPhone">Phone</label><input class="inp" id="gPhone" name="gPhone" type="tel" autocomplete="tel" placeholder="+234 800 000 0000"><span class="emsg">Enter a phone number with at least 10 digits.</span></div>
+            <div class="field"><label for="gCity">City</label><select class="inp" id="gCity" name="gCity"><option value="">Select a city</option><option>Lagos</option><option>Abuja</option><option>Port Harcourt</option><option>Ibadan</option><option>Kano</option><option>Enugu</option><option>Other</option></select><span class="emsg">Choose a city.</span></div>
+          </div>
+        </div>
+        <!-- step 2 -->
+        <div class="wstep" data-step="1" hidden>
+          <div class="panel-h"><div><h3>About your ward</h3><p>We'll use their age and reading confidence to suggest a starting level.</p></div><span class="level-chip" id="wLevelChip"><b>Level 2</b>Fluency &amp; vocabulary</span></div>
+          <div class="grid2">
+            <div class="field"><label for="cName">Child's first name</label><input class="inp" id="cName" name="cName" placeholder="e.g. Tunde"><span class="emsg">Enter your child's first name.</span></div>
+            <div class="field"><span class="lab" id="cAgeLab">Age</span><div class="stepper" role="group" aria-labelledby="cAgeLab"><button type="button" data-d="-1" aria-label="Younger">−</button><output id="cAge" class="tnum">8</output><button type="button" data-d="1" aria-label="Older">+</button></div><span class="hint">Ages 5 to 14</span></div>
+            <div class="field" style="grid-column:1/-1"><label for="cSchool">School <span class="hint">(optional)</span></label><input class="inp" id="cSchool" name="cSchool" placeholder="School name"></div>
+          </div>
+          <div class="field"><span class="lab" id="cConfLab">How confident a reader are they?</span>
+            <div class="opt-card" role="group" aria-labelledby="cConfLab" data-group="conf">
+              <button type="button" class="opt" aria-pressed="false" data-v="Just starting">Just starting<small>Learning letter sounds</small></button>
+              <button type="button" class="opt" aria-pressed="true" data-v="Reads short sentences">Reads short sentences<small>Needs some help</small></button>
+              <button type="button" class="opt" aria-pressed="false" data-v="Reads chapter books">Reads chapter books<small>Ready to go deeper</small></button>
+            </div>
+          </div>
+        </div>
+        <!-- step 3 -->
+        <div class="wstep" data-step="2" hidden>
+          <div class="panel-h"><div><h3>Session preferences</h3><p>Sessions are 30 minutes, once a week, live with a mentor.</p></div></div>
+          <div class="field"><span class="lab" id="sDayLab">Preferred day</span>
+            <div class="opts" role="group" aria-labelledby="sDayLab" data-group="day">
+              <button type="button" class="opt" aria-pressed="false" data-v="Monday">Mon</button><button type="button" class="opt" aria-pressed="false" data-v="Tuesday">Tue</button><button type="button" class="opt" aria-pressed="false" data-v="Wednesday">Wed</button><button type="button" class="opt" aria-pressed="false" data-v="Thursday">Thu</button><button type="button" class="opt" aria-pressed="false" data-v="Friday">Fri</button><button type="button" class="opt" aria-pressed="true" data-v="Saturday">Sat</button><button type="button" class="opt" aria-pressed="false" data-v="Sunday">Sun</button>
+            </div>
+          </div>
+          <div class="field"><span class="lab" id="sTimeLab">Time</span>
+            <div class="opts" role="group" aria-labelledby="sTimeLab" data-group="time">
+              <button type="button" class="opt" aria-pressed="false" data-v="09:00">09:00</button><button type="button" class="opt" aria-pressed="true" data-v="10:00">10:00</button><button type="button" class="opt" aria-pressed="false" data-v="14:00">14:00</button><button type="button" class="opt" aria-pressed="false" data-v="16:00">16:00</button><button type="button" class="opt" aria-pressed="false" data-v="17:30">17:30</button>
+            </div>
+          </div>
+          <div class="grid2">
+            <div class="field"><label for="sLang">Mentor language</label><select class="inp" id="sLang"><option>English</option><option>English + Yoruba</option><option>English + Igbo</option><option>English + Hausa</option><option>English + Pidgin</option></select></div>
+            <div class="field"><label for="sDev">Device for sessions</label><select class="inp" id="sDev"><option>Smartphone</option><option>Tablet</option><option>Laptop or desktop</option></select></div>
+          </div>
+        </div>
+        <!-- step 4 -->
+        <div class="wstep" data-step="3" hidden>
+          <div class="panel-h"><div><h3>Check and confirm</h3><p>Edit anything before you submit.</p></div></div>
+          <dl class="review" id="review" style="margin:0"></dl>
+          <div class="field" id="consentF"><label class="check"><input type="checkbox" id="consent"> I agree that sessions are recorded and shared with me in the Guardian portal.</label><span class="emsg">Please confirm to continue.</span></div>
+        </div>
+        <!-- done -->
+        <div class="wstep" data-step="4" hidden>
+          <div class="success" id="success">
+            <div class="confetti" id="confetti" aria-hidden="true"></div>
+            <div class="tick"><svg><use href="#i-check"/></svg></div>
+            <h3 id="sucTitle">Welcome to CRCi Hub</h3>
+            <p id="sucText"></p>
+            <div class="next-steps">
+              <div><b>01</b><strong>Diagnostic test</strong>A 10-minute baseline reading test.</div>
+              <div><b>02</b><strong>Mentor match</strong>By schedule, language and pace.</div>
+              <div><b>03</b><strong>First session</strong>30 minutes, live.</div>
+              <div><b>04</b><strong>Your sign-off</strong>Review recordings and notes.</div>
+            </div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:8px">
+              <button type="button" class="btn btn-orange" id="toPortal"><span class="roll"><span>Open the guardian portal</span><span aria-hidden="true">Open the guardian portal</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></button>
+              <a href="#home" class="btn-ghost">Back to home</a>
+            </div>
+          </div>
+        </div>
+        <div class="wnav" id="wizNav">
+          <button type="button" class="btn-ghost" id="wizBack">Back</button>
+          <button type="submit" class="btn btn-orange" id="wizNext"><span class="roll"><span class="nl">Continue</span><span class="nl" aria-hidden="true">Continue</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></button>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>
+
+<!-- ======================================================= SIGN IN -->
+<div class="page" data-page="signin" data-title="Sign in - CRCi Hub" data-flow="1" hidden>
+  <section class="flow">
+    <div class="wrap auth">
+      <div class="auth-art">
+        <div class="ph-art" style="z-index:-1"><div class="ph-blob a" style="opacity:.55"></div><div class="close-flutes"></div></div>
+        <h2>Every reader, <span class="serif">in one place.</span></h2>
+        <blockquote>"I review the exact session recordings and approve finished books from my phone while I'm at work."<b>Chidi Okonkwo, parent in Abuja</b></blockquote>
+      </div>
+      <form class="auth-form" id="signinForm" novalidate>
+        <div><h3>Sign in</h3><p style="color:var(--ink-2);margin-top:6px">Choose your portal. <span class="proto" style="margin-left:4px"><b>Preview</b> Any email and password work.</span></p></div>
+        <div class="roles" role="group" aria-label="Portal" id="roles">
+          <button type="button" class="opt" aria-pressed="true" data-r="guardian">Guardian</button>
+          <button type="button" class="opt" aria-pressed="false" data-r="student">Student</button>
+          <button type="button" class="opt" aria-pressed="false" data-r="teacher">Teacher</button>
+          <button type="button" class="opt" aria-pressed="false" data-r="volunteer">Volunteer</button>
+          <button type="button" class="opt" aria-pressed="false" data-r="sponsor">Sponsor</button>
+          <button type="button" class="opt" aria-pressed="false" data-r="donor">Donor</button>
+        </div>
+        <div class="field"><label for="siEmail">Email</label><input class="inp" id="siEmail" type="email" autocomplete="off" placeholder="you@example.com"><span class="emsg">Enter a valid email address.</span></div>
+        <div class="field"><label for="siPw">Password</label><div class="pw"><input class="inp" id="siPw" type="password" autocomplete="off" placeholder="At least 6 characters"><button type="button" id="siShow">Show</button></div><span class="emsg">Use at least 6 characters.</span></div>
+        <label class="check"><input type="checkbox" id="siKeep" checked> Keep me signed in on this device</label>
+        <button type="submit" class="btn btn-orange" id="siBtn" style="justify-content:space-between"><span class="roll"><span>Sign in</span><span aria-hidden="true">Sign in</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></button>
+        <div class="auth-foot"><span>New to CRCi Hub? <a href="#enroll">Enroll your ward</a></span><a href="#faqs">Need help?</a></div>
+      </form>
+    </div>
+  </section>
+</div>
+
+<!-- ======================================================= PORTAL -->
+<div class="page" data-page="portal" data-title="Portal - CRCi Hub" data-flow="1" hidden>
+  <section class="portal">
+    <div class="wrap app">
+      <aside class="side">
+        <div class="side-who"><span class="ava" id="pAva">BA</span><div><strong id="pName">Bisi Adebayo</strong><small id="pRole">Guardian</small></div></div>
+        <nav id="pNav" aria-label="Portal"></nav>
+        <div class="switch"><label for="pSwitch">Switch portal (preview)</label><select class="inp" id="pSwitch"><option value="guardian">Guardian</option><option value="student">Student</option><option value="teacher">Teacher / Educator</option><option value="volunteer">Community Volunteer</option><option value="sponsor">Sponsor</option><option value="donor">Donor</option></select></div>
+        <button class="btn-mini ghost" id="pOut" style="display:inline-flex;gap:8px;align-items:center;justify-content:center"><svg width="14" height="14"><use href="#i-logout"/></svg>Sign out</button>
+      </aside>
+      <div class="main" id="pMain"></div>
+    </div>
+  </section>
+</div>
+</main>
+
+<!-- ================= CLOSING + FOOTER (shared) ================= -->
+<section class="closing" id="closing">
+  <div class="close-card">
+    <div class="close-glow" id="closeGlow"></div>
+    <div class="close-flutes"></div>
+    <div class="close-in">
+      <div id="closeCta">
+        <h2 data-a="words">Empower your child's <span class="serif">literacy journey</span> now.</h2>
+        <div class="close-row">
+          <p>Over 1,200 families already use CRCi Hub to build their children's confidence, vocabulary and reading fluency.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a href="#enroll" class="btn btn-orange"><span class="roll"><span>Enroll your ward</span><span aria-hidden="true">Enroll your ward</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a>
+            <a href="#signin" class="btn btn-light"><span class="roll"><span>Sign in</span><span aria-hidden="true">Sign in</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a>
+          </div>
+        </div>
+      </div>
+
+      <footer class="foot">
+        <div class="foot-brand">
+          <div class="logo"><span class="logo-mark" style="background:#fff;color:var(--plum)">CRCi</span><span class="logo-word">CRCi Hub</span></div>
+          <p>Transforming youth reading and comprehension across Africa.</p>
+          
+        </div>
+        <div><h5>Programs</h5><ul><li><a href="#tracks" data-track="1">Early Phonics (Level 1)</a></li><li><a href="#tracks" data-track="2">Fluency Track (Level 2)</a></li><li><a href="#tracks" data-track="3">Critical Analysis (Level 3)</a></li><li><a href="#signin" data-role="teacher">School Partnerships</a></li><li><a href="#demo">Try the demo</a></li></ul></div>
+        <div><h5>Portals</h5><ul><li><a href="#signin" data-role="guardian">Guardian</a></li><li><a href="#signin" data-role="student">Student</a></li><li><a href="#signin" data-role="teacher">Teacher / Educator</a></li><li><a href="#signin" data-role="volunteer">Community Volunteer</a></li><li><a href="#signin" data-role="sponsor">Sponsor</a></li><li><a href="#signin" data-role="donor">Donor</a></li></ul></div>
+        <div><h5>Support</h5><ul><li class="sel">support@crcihub.org</li><li class="sel tnum">+234 907 882 7264</li><li><a href="#faqs">FAQs</a></li><li><a href="#about">About CRCi</a></li></ul></div>
+      </footer>
+      <div class="wordmark" aria-hidden="true">CRCi Hub</div>
+      <div class="legal"><span>© 2026 CRCi Hub. All rights reserved.</span><div><a href="#faqs">Privacy</a><a href="#faqs">Terms</a><a href="#faqs">Cookies</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MOBILE SHEET -->
+<div class="sheet" id="sheet" data-open="false" aria-hidden="true">
+  <div class="sheet-bg" data-close></div>
+  <div class="sheet-panel" role="dialog" aria-label="Menu">
+    <div class="sheet-head">
+      <a href="#home" class="logo" data-close><span class="logo-mark">CRCi</span><span class="logo-word">CRCi Hub</span></a>
+      <button class="menu-btn" style="display:inline-flex" data-close><svg><use href="#i-x"/></svg>Close</button>
+    </div>
+    <nav id="sheetLinks">
+      <a href="#home" data-close>Home</a>
+      <a href="#about" data-close>About</a>
+      <a href="#how-it-works" data-close>How it works</a>
+      <a href="#tracks" data-close>Tracks</a>
+      <a href="#impact" data-close>Impact</a>
+      <a href="#demo" data-close>Demo</a>
+      <a href="#faqs" data-close>FAQs</a>
+    </nav>
+    <a href="#enroll" class="btn btn-orange" data-close style="width:100%;justify-content:space-between"><span class="roll"><span>Enroll your ward</span><span aria-hidden="true">Enroll your ward</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a>
+    <div class="sheet-foot">
+      <a href="#signin" class="btn btn-light" data-close><span class="roll"><span>Sign in</span><span aria-hidden="true">Sign in</span></span><span class="ic"><svg><use href="#i-arrow"/></svg></span></a>
+      <button class="btn-mini ghost theme-btn" aria-pressed="false"><span class="tlabel">Dark mode: off</span></button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal" data-open="false" aria-hidden="true">
+  <div class="modal-bg" data-mclose></div>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="icon-btn modal-x" data-mclose aria-label="Close"><svg><use href="#i-x"/></svg></button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"><i><svg><use href="#i-check"/></svg></i><span id="toastMsg"></span></div>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
